@@ -1,0 +1,32 @@
+.social-icon {
+  margin-right: 15px;
+  font-size: 18px;
+}
+
+.social-icon:last-child {
+  margin-right: 0;
+}
+
+.social-icon:hover .icon-link {
+  transition: 0.2s ease-in-out;
+  color: #4aaacc;
+}
+
+.icon-link {
+  color: white;
+  transition: 0.2s color;
+}
+
+.footer-social-media-icons {
+  position: fixed;
+  width: 150px;
+  height: 40px;
+  background: black;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 25px;
+}

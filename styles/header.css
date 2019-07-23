@@ -1,0 +1,233 @@
+.about-container {
+  background-image: url("../assets/woman-1081873_1920.jpg");
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-container::before {
+  background-image: url("../assets/gridtile.png");
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.header-logo-link {
+  position: relative;
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex: 0 0 auto;
+}
+
+.header-link {
+  color: white;
+  position: relative;
+  padding-left: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  opacity: 0.8;
+  letter-spacing: 2px;
+}
+
+.about-content {
+  position: relative;
+  flex: 1 0 auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.about--title-text {
+  color: white;
+  opacity: 0.3;
+  font-size: 100px;
+  text-transform: uppercase;
+  margin: 10px;
+  letter-spacing: 30px;
+  font-weight: bold;
+  display: flex;
+  text-align: center;
+}
+
+.about-text {
+  color: white;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.about-text-1 {
+  color: #4aaacc;
+  font-size: 60px;
+  margin-right: 20px;
+}
+
+.about-text-2 {
+  color: #4aaacc;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 60px;
+  margin-right: 20px;
+}
+
+.about-text-3 {
+  color: white;
+  font-size: 60px;
+  margin-right: 20px;
+}
+
+.about-text-4 {
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 60px;
+
+}
+
+.header-burger-menu a {
+  color: black;
+  padding: 14px 100px 16px 15px;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 400;
+  display: block;
+}
+
+.header-burger-menu a.icon {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: white;
+  cursor: pointer;
+}
+
+.header-burger-menu a:hover {
+  color: #49a6c7;
+}
+
+.menu {
+  /*stili kad menu parādās - 1 stils ar pozīciju, ka menu ir redzams, transition slide from right
+  right0
+  pec tam
+  right200px*/
+
+  background-color: white;
+  color: black;
+  position: fixed;
+  width: 25%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  text-align: right;
+}
+
+.menu-hidden {
+  display: none;
+  top: 5px;
+  right: 0;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  font: 30px/0.6em 'Arial';
+  color: #ccc;
+  cursor: pointer;
+
+  /*sākotnējie stili - 1 stils, kurš noteiks sākotnējo pozīciju*/
+}
+
+.menu-close {
+  margin-right: 40px;
+  text-decoration: none;
+  border: none;
+  font-size: 20px;
+  margin-top: 40px;
+  cursor: pointer;
+  outline: none;
+}
+
+.header-social-icon {
+  margin-right: 15px;
+  font-size: 18px;
+}
+
+.header-social-icon:last-child {
+  margin-right: 0;
+}
+
+.header-social-icon:hover .icon-link {
+  transition: 0.2s ease-in-out;
+  color: #4aaacc;
+}
+
+.icon-link {
+  color: white;
+  transition: 0.2s color;
+}
+
+.header-social-media-icons {
+  position: fixed;
+  width: 150px;
+  height: 40px;
+  background: black;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 25px;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .about-text,
+  .about-text-1,
+  .about-text-2,
+  .about-text-3,
+  .about-text-4 {
+    display: flex;
+    font-size: 40px;
+  }
+
+  .about--title-text {
+    font-size: 80px;
+  }
+
+  .menu {
+    width: 33%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-text,
+  .about-text-1,
+  .about-text-2,
+  .about-text-3,
+  .about-text-4 {
+    display: flex;
+    font-size: 40px;
+  }
+
+  .about--title-text {
+    font-size: 80px;
+  }
+
+  .menu {
+    width: 100%;
+  }
+}

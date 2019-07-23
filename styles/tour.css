@@ -1,0 +1,139 @@
+.tour-dates {
+  margin: 0 50px;
+}
+
+.tour-inner {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 20px 0;
+}
+
+.tour-locations {
+  display: flex;
+  align-items: flex-start;
+  flex: 1 0 auto;
+  line-height: 2;
+}
+
+.tour-locations p {
+  display: flex;
+  flex-direction: row;
+}
+
+.tour-locations-date {
+  flex: 0 0 auto;
+  flex-basis: 20%;
+}
+
+.tour-locations-place {
+  display: flex;
+  flex: 1 0 auto;
+  padding-left: 50px;
+}
+
+.tour-place-text-date {
+  flex: 0 0 15%;
+}
+
+.tour-place-text {
+  color: white;
+  text-align: left;
+  flex: 1 0 auto;
+  flex-basis: 20%;
+}
+
+.tour-place-text-date {
+  color: white;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.tour-btn-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.tour-btn-all-dates {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.btn-all-dates {
+  border-radius: 0;
+  height: 80px;
+  width: 250px;
+  background-color: black;
+  font-size: 18px;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  border: 4px white solid;
+  margin: 200px 0;
+  text-transform: uppercase;
+}
+
+.btn-all-dates:hover {
+  transition: background-color 0.2s ease-in-out;
+  background-color: white;
+  color: #000;
+}
+
+.btn-tickets-rsvp {
+  border-radius: 0;
+  height: 40px;
+  width: 100px;
+  background-color: black;
+  border-width: 2px;
+}
+
+.btn-rsvp {
+  height: 40px;
+  width: 80px;
+}
+
+.btn-text {
+  font-size: 13px;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  margin-right: 5px;
+  text-transform: uppercase;
+}
+
+.btn-tickets-rsvp:hover,
+.btn-rsvp:hover {
+  transition: 0.2s ease-in-out;
+  background-color: white;
+  color: #000;
+}
+
+@media screen and (max-width: 768px) {
+  .tour-locations {
+    flex-direction: column;
+  }
+
+  .tour-locations-place {
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .tour-locations-place {
+    flex-direction: column;
+  }
+
+  .tour-inner {
+    align-items: flex-start;
+  }
+
+  .tour-btn-wrapper {
+    margin: 0;
+  }
+}
+

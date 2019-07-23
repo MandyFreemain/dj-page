@@ -1,0 +1,107 @@
+.shop-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.img-shop {
+  background-image: url("../assets/jacket.jpeg");
+  text-align: center;
+  object-fit: cover;
+  width: 66.6%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+}
+
+.shop-container-sm {
+  display: flex;
+  flex-direction: column;
+  width: 33.3%;
+}
+
+.img-tees {
+  background-image: url("../assets/t-shirt.jpeg");
+  object-fit: cover;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-position: -100px top;
+  background-size: 150%;
+  background-color: black;
+}
+
+.img-hats {
+  background-image: url("../assets/cap.jpeg");
+  object-fit: cover;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 150%;
+  background-color: black;
+}
+
+.img-hats:hover,
+.img-tees:hover,
+.img-shop:hover {
+  opacity: 0.3;
+  transition: background-color 0.2s;
+}
+
+.shop-onclick,
+.tees-onclick,
+.hats-onclick {
+  color: white;
+  font-size: 60px;
+  margin: 0;
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+  text-align: center;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+  .img-shop {
+    width: 100%;
+    height: 400px;
+  }
+
+  .shop-container-sm {
+    width: 100%;
+    height: 400px;
+  }
+
+  .img-tees {
+    background-position: -100px -100px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .shop-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 100px;
+  }
+
+  .img-shop {
+    width: 100%;
+    height: 400px;
+  }
+
+  .shop-container-sm {
+    width: 100%;
+    height: 800px;
+  }
+
+  .img-tees {
+    background-position: -150px -150px;
+  }
+
+  .btn-watch {
+    margin-right: 20px;
+  }
+}

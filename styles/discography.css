@@ -1,0 +1,176 @@
+.discography-container {
+  margin-bottom: 150px;
+  flex-direction: row;
+  width: 1300px;
+  max-width: 100%;
+}
+
+.discography-content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-bottom: 200px;
+  padding: 50px;
+}
+
+.discography-img {
+  width: 500px;
+  max-width: 100%;
+  height: 400px;
+}
+
+.discography-content-video {
+  width: 50%;
+}
+
+.discography-content-video-frame {
+  width: 500px;
+  height: 460px;
+  max-width: 100%;
+}
+
+.discography-content-description {
+  margin-left: 50px;
+  width: 50%;
+}
+
+.discography-title {
+  color: white;
+  text-align: left;
+  font-size: 65px;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
+.discography-about-text {
+  color: white;
+  font-size: 25px;
+}
+
+.discography-btn {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.btn-listen {
+  border-radius: 0;
+  height: 70px;
+  width: 140px;
+  background-color: black;
+  font-size: 18px;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  border: 4px white solid;
+  text-transform: uppercase;
+}
+
+.btn-watch {
+  border-radius: 0;
+  height: 70px;
+  width: 140px;
+  background-color: black;
+  font-size: 18px;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  border: 4px white solid;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease-out;
+}
+
+.btn-listen:hover,
+.btn-watch:hover {
+  transition: background-color 0.2s ease;
+  background-color: white;
+  color: #000;
+}
+
+@media screen and (max-width: 1000px) {
+  .discography-container {
+    margin-bottom: 150px;
+    flex-direction: row;
+    text-align: center;
+  }
+
+  .discography-content {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-bottom: 200px;
+  }
+
+  .discography-title {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+  }
+
+  .discography-about-text {
+    padding: 0 45px;
+  }
+
+  .discography-content-description {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .discography-btn {
+    justify-content: space-around;
+    display: flex;
+    margin-top: 50px;
+  }
+
+  .discography-content-video {
+    width: 100%;
+  }
+
+  .discography-content-image {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .discography-container {
+    margin-bottom: 150px;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .discography-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 200px;
+    padding: 0;
+  }
+
+  .discography-content-image {
+    width: 100%;
+  }
+
+  .discography-content-description {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .discography-about-text {
+    padding: 0 45px;
+  }
+
+  .discography-btn {
+    justify-content: center;
+  }
+}
+
+
+
+
+
+
+
+
+
