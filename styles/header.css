@@ -97,18 +97,19 @@
 
 .header-burger-menu a {
   color: black;
-  padding: 14px 100px 16px 15px;
+  padding: 14px 50px 16px 15px;
   text-decoration: none;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 400;
   display: block;
+  text-transform: uppercase;
 }
 
 .header-burger-menu a.icon {
   display: block;
   position: absolute;
   right: 0;
-  top: 0;
+  top: 34px;
   color: white;
   cursor: pointer;
 }
@@ -151,13 +152,18 @@
 }
 
 .menu-close {
-  margin-right: 40px;
+  margin-right: 50px;
   text-decoration: none;
   border: none;
   font-size: 20px;
-  margin-top: 40px;
+  margin-top: 50px;
   cursor: pointer;
   outline: none;
+}
+
+.menu-close-btn {
+  width: 15px;
+  color: black;
 }
 
 .header-social-icon {
@@ -192,7 +198,6 @@
   align-items: center;
   margin-right: 25px;
 }
-
 
 @media screen and (max-width: 1000px) {
   .about-text,
