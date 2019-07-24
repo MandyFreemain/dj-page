@@ -95,38 +95,43 @@
 
 }
 
-.header-burger-menu a {
+.header-burger-menu-dropdown-link-text {
   color: black;
-  padding: 14px 50px 16px 15px;
+  padding: 14px 140px 16px 15px;
   text-decoration: none;
   font-size: 20px;
   font-weight: 400;
   display: block;
   text-transform: uppercase;
+  line-height: 1;
 }
 
-.header-burger-menu a.icon {
+.header-burger-menu-dropdown-link-text:first-of-type {
+  padding-top: 0;
+}
+
+.header-burger-menu .icon {
   display: block;
   position: absolute;
   right: 0;
   top: 34px;
   color: white;
   cursor: pointer;
+  margin-right: 50px;
+  margin-top: 20px;
 }
 
-.header-burger-menu a:hover {
+.header-burger-menu-dropdown-link-text:hover {
   color: #49a6c7;
 }
 
-.menu {
-  /*stili kad menu parādās - 1 stils ar pozīciju, ka menu ir redzams, transition slide from right
-  right0
-  pec tam
-  right200px*/
+.hamburger-icon-size {
+  font-size: 25px;
+}
 
+.menu {
   background-color: white;
   color: black;
-  position: fixed;
   width: 25%;
   height: 100vh;
   margin: 0;
@@ -135,20 +140,12 @@
   top: 0;
   right: 0;
   text-align: right;
+  position: fixed;
+  transition: right 0.8s linear;
 }
 
 .menu-hidden {
-  display: none;
-  top: 5px;
-  right: 0;
-  position: absolute;
-  height: 20px;
-  width: 20px;
-  font: 30px/0.6em 'Arial';
-  color: #ccc;
-  cursor: pointer;
-
-  /*sākotnējie stili - 1 stils, kurš noteiks sākotnējo pozīciju*/
+  right: calc(75% - 100%);
 }
 
 .menu-close {
@@ -162,13 +159,20 @@
 }
 
 .menu-close-btn {
-  width: 15px;
-  color: black;
+  font-size: 25px;
 }
 
 .header-social-icon {
-  margin-right: 15px;
+  margin-right: 5px;
   font-size: 18px;
+  border-radius: 50%;
+  background-color: black;
+  text-align: center;
+  line-height: 8px;
+  vertical-align: middle;
+  padding: 5px;
+  width: 28px;
+  height: 28px;
 }
 
 .header-social-icon:last-child {
@@ -186,10 +190,8 @@
 }
 
 .header-social-media-icons {
-  position: fixed;
-  width: 150px;
+  position: absolute;
   height: 40px;
-  background: black;
   right: 0;
   bottom: 0;
   display: flex;
@@ -216,6 +218,10 @@
   .menu {
     width: 33%;
   }
+
+  .menu-hidden {
+    right: calc(64% - 100%);
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -234,5 +240,9 @@
 
   .menu {
     width: 100%;
+  }
+
+  .menu-hidden {
+    right: -100%;
   }
 }

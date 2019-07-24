@@ -10,7 +10,6 @@ function handleClick () {
   }
 }
 
-
 menuButton.addEventListener('click', handleClick)
 menuCloseButton.addEventListener('click', handleClick)
 

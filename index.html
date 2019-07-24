@@ -16,7 +16,6 @@
 <body>
 
 <header id="about" class="about-container">
-	
 	<div class="header-logo-link">
 		<a class="header-link" href="#">
 			DJ Foxy Mandy
@@ -24,13 +23,13 @@
 		<div class="header-burger-menu">
 			<div class="menu menu-hidden">
 				<button class="menu-close" aria-label="Close menu">
-					<img class="menu-close-btn" src="assets/close-btn.svg"/>
+					<i class="fas fa-times menu-close-btn"></i>
 				</button>
-				<a href="#header">About</a>
-				<a href="#discography">Discography</a>
-				<a href="#shop">Shop</a>
-				<a href="#tour">Tour</a>
-				<a href="#social">Social</a>
+				<a class="header-burger-menu-dropdown-link-text" href="#header">About</a>
+				<a class="header-burger-menu-dropdown-link-text" href="#discography">Discography</a>
+				<a class="header-burger-menu-dropdown-link-text" href="#shop">Shop</a>
+				<a class="header-burger-menu-dropdown-link-text" href="#tour">Tour</a>
+				<a class="header-burger-menu-dropdown-link-text" href="#social">Social</a>
 				<div id="social-header" class="social-header">
 					<div class="header-social-media-icons">
 						<div class="header-social-icon">
@@ -49,7 +48,7 @@
 				</div>
 			</div>
 			<a href="#" class="icon js-menu-control" aria-label="Open site menu">
-				<i class="fa fa-bars"></i>
+				<i class="fa fa-bars hamburger-icon-size"></i>
 			</a>
 		</div>
 	</div>
@@ -246,9 +245,34 @@
 		</div>
 	</div>
 
-	<div class="tour-btn-all-dates">
-		<button class="btn-all-dates">View all dates</button>
+	<!--<div class="tour-btn-all-dates">-->
+	<!--<button class="btn-all-dates">View all dates</button>-->
+	<!--</div>-->
+
+	<a href="#menu" id="toggle">
+		<div class="tour-btn-all-dates">
+			<button class="btn-all-dates">View all dates</button>
+		</div>
+	</a>
+	<div id="menu">
+		<div class="tour-inner">
+			<div class="tour-locations">
+				<div class="tour-locations-date">
+					<p class="tour-place-text-date">jun 28 fri</p>
+				</div>
+				<div class="tour-locations-place">
+					<p class="tour-place-text">BOMFest: June 28-30</p>
+					<p class="tour-place-text">Edmonton, Canada</p>
+				</div>
+			</div>
+			<div class="tour-btn-wrapper">
+				<button class="btn-tickets-rsvp btn-text">Tickets</button>
+				<button class="btn-tickets-rsvp btn-rsvp btn-text">RSVP</button>
+			</div>
+		</div>
 	</div>
+
+
 </section>
 
 <footer id="social" class="footer">
