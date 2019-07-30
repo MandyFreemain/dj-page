@@ -1,8 +1,10 @@
 var menuButton = document.querySelector(".js-menu-control");
 var menu = document.querySelector(".menu");
 var menuCloseButton = document.querySelector(".menu-close");
+var allDatesButton = document.querySelector(".all-dates-button");
+var tourInnerAllDates = document.querySelector(".tour-inner-all-dates");
 
-function handleClick () {
+function handleBurgerMenuClick () {
   if (menu.classList.contains("menu-hidden")) {
     menu.classList.remove("menu-hidden");
   } else {
@@ -10,7 +12,17 @@ function handleClick () {
   }
 }
 
-menuButton.addEventListener('click', handleClick)
-menuCloseButton.addEventListener('click', handleClick)
+function handleViewAllDatesClick () {
+  if (tourInnerAllDates.classList.contains("tour-inner-hidden")) {
+    tourInnerAllDates.classList.remove("tour-inner-hidden");
+  } else {
+    tourInnerAllDates.classList.add("tour-inner-hidden");
+  }
+}
+
+menuButton.addEventListener('click', handleBurgerMenuClick)
+menuCloseButton.addEventListener('click', handleBurgerMenuClick)
+allDatesButton.addEventListener('click', handleViewAllDatesClick)
+
 
 
