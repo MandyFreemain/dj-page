@@ -145,6 +145,11 @@
   .tour-inner-all-dates {
     max-height: 100%;
   }
+
+  .tour-inner-hidden {
+    max-height: 0;
+  }
+
 }
 
 @media screen and (max-width: 1000px) {
@@ -162,6 +167,10 @@
 
   .tour-inner-all-dates {
     max-height: 100%;
+  }
+
+  .tour-inner-hidden {
+    max-height: 0;
   }
 }
 
