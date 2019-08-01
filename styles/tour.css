@@ -159,5 +159,9 @@
   .tour-btn-wrapper {
     margin: 0;
   }
+
+  .tour-inner-all-dates {
+    max-height: 100%;
+  }
 }
 
