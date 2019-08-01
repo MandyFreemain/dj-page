@@ -69,13 +69,7 @@
 }
 
 .all-dates-button {
-  margin-bottom: 50px;
   text-decoration: none;
-  border: none;
-  font-size: 20px;
-  margin-top: 50px;
-  cursor: pointer;
-  outline: none;
 }
 
 .btn-all-dates {
@@ -140,6 +134,8 @@
 @media screen and (max-width: 768px) {
   .tour-locations {
     flex-direction: column;
+    flex: 1;
+    padding-right: 10px;
   }
 
   .tour-locations-place {
