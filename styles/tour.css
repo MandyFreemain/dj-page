@@ -123,33 +123,12 @@
 
 .tour-inner-all-dates {
   overflow: hidden;
-  max-height: 1200px;
   transition: max-height .5s ease-in-out;
+  max-height: 1500px;
 }
 
 .tour-inner-hidden {
   max-height: 0;
-}
-
-@media screen and (max-width: 768px) {
-  .tour-locations {
-    flex-direction: column;
-    flex: 1;
-    padding-right: 10px;
-  }
-
-  .tour-locations-place {
-    padding-left: 0;
-  }
-
-  .tour-inner-all-dates {
-    max-height: 100%;
-  }
-
-  .tour-inner-hidden {
-    max-height: 0;
-  }
-
 }
 
 @media screen and (max-width: 1000px) {
@@ -166,11 +145,51 @@
   }
 
   .tour-inner-all-dates {
-    max-height: 100%;
+    max-height: 2500px;
   }
 
   .tour-inner-hidden {
     max-height: 0;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .tour-locations {
+    flex-direction: column;
+    flex: 1 0 50%;
+  }
+
+  .tour-locations-place {
+    padding-left: 0;
+  }
+
+  .tour-inner-all-dates {
+    max-height: 2500px;
+  }
+
+  .tour-inner-hidden {
+    max-height: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .tour-btn-wrapper {
+    margin: 0;
+    flex-direction: column;
+    flex: 1 0 50%;
+  }
+
+  .btn-text {
+    margin: 0 0 15px;
+  }
+
+  .tour-inner-all-dates {
+    max-height: 3000px;
+  }
+
+  .tour-inner-hidden {
+    max-height: 0;
+  }
+}
+
 
